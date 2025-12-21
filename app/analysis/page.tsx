@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import KeyGenerator from '@/components/rsa-analyzer/KeyGenerator'
 import RSAAnalysisForm from '@/components/rsa-analyzer/RSAAnalysisForm'
-import KeyInfo from '@/components/rsa-analyzer/KeyInfo'
+import Key_Info from '@/components/rsa-analyzer/Key_Info'
 import { Shield, Key, Lock } from 'lucide-react'
 
 export default function AnalysisPage() {
@@ -76,7 +76,7 @@ export default function AnalysisPage() {
                         </div>
 
                         {keyPair && (
-                            <KeyInfo keyPair={keyPair} />
+                            <Key_Info keyPair={keyPair} />
                         )}
 
                         <div className="bg-yellow-50 rounded-lg p-6">
