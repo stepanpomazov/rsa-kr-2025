@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background: 0 0% 100%;
+        --foreground: 222.2 84% 4.9%;
+    }
+
+    body {
+        @apply bg-gray-50 text-gray-900;
+    }
+}
+
+@layer components {
+    .glass-card {
+        @apply bg-white/80 backdrop-blur-sm border border-white/20 shadow-lg;
+    }
+
+    .algorithm-card {
+        @apply bg-gradient-to-br from-white to-gray-50 border border-gray-200
+        rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow;
+    }
+
+    .number-input {
+        @apply font-mono text-lg tracking-tight;
+    }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-gray-400 rounded-full hover:bg-gray-500;
+}
+
+/* Chart animations */
+.recharts-tooltip-wrapper {
+    @apply shadow-lg rounded-lg overflow-hidden;
+}
